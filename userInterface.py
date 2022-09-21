@@ -7,6 +7,7 @@ def menu ()->None:
         print("3) Series with Dictionary\n")
         print("4) Serie operation \n")
         print("5) Serie modification \n")
+        print("6) Increase Notes \n")
         print("0) Exit \n")
 
         option = int(input('Select an option please: '))
@@ -20,6 +21,8 @@ def menu ()->None:
         elif (option == 4):
             import serieOperation
         elif (option == 5):
+            import seriesModification
+        elif (option == 6):
             import seriesModification
 
 
