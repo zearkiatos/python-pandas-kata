@@ -47,11 +47,13 @@ print(dataFrame_records)
 times = pandas.Series([9.58, 9.69, 9.72, 9.74, 9.77])
 
 athletes = pandas.Series(["Usain Bolt", "Usain Bolt",
-            "Usain Bolt", "Asafa Powell", "Asafa Powell"])
+                          "Usain Bolt", "Asafa Powell", "Asafa Powell"])
 
-countries = pandas.Series(["Jamaica", "Jamaica", "Jamaica", "Jamaica", "Jamaica"])
+countries = pandas.Series(
+    ["Jamaica", "Jamaica", "Jamaica", "Jamaica", "Jamaica"])
 
-dates = pandas.Series(["16/08/2009", "16/09/2008", "31/05/2008", "09/09/2007", "18/08/2006"])
+dates = pandas.Series(
+    ["16/08/2009", "16/09/2008", "31/05/2008", "09/09/2007", "18/08/2006"])
 
 cities = pandas.Series(["Berlin", "Beijing", "New York", "Rieti", "Zurich"])
 
@@ -75,9 +77,41 @@ data = pandas.read_csv('./data/SECOP_II_-_Contratos_Electr_nicos.csv')
 
 print(data.columns)
 
-columns_values = ["Valor del Contrato", "Valor de pago adelantado", "Valor Pendiente de Pago", "Valor Pagado"]
+columns_values = ["Valor del Contrato", "Valor de pago adelantado",
+                  "Valor Pendiente de Pago", "Valor Pagado", "Sector"]
 
 values = data[columns_values].copy()
 
+categories = values.copy()
+
 print(values)
 
+print(categories.head(5))
+
+print(categories.tail())
+
+print(categories.info())
+
+print(categories.describe())
+
+print(categories["Sector"].unique())
+
+print(categories["Sector"].value_counts())
+
+print(values.mean())
+
+print(values["Valor Pagado"].mean())
+
+print(values.max())
+
+print(values.idmax())
+
+print(values.quantile(0.50))
+
+print(values.quantile(0.95))
+
+print(values.sum())
+
+print(values.div(1000000))
+
+print(values.sum(axis=1))
