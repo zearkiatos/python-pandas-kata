@@ -19,3 +19,7 @@ print(temperatures)
 temperatures = temperatures.reset_index(drop=True)
 
 print(temperatures)
+
+dataFrame_records = pandas.read_csv("./data/records.csv")
+
+print(dataFrame_records)
