@@ -9,6 +9,7 @@ def menu ()->None:
         print("5) Serie modification \n")
         print("6) Increase Notes \n")
         print("7) DataFrames \n")
+        print("8) DataFrames - Orders \n")
         print("0) Exit \n")
 
         option = int(input('Select an option please: '))
@@ -27,6 +28,8 @@ def menu ()->None:
             import seriesModification
         elif (option == 7):
             import dataFrames
+        elif (option == 8):
+            import dataFramesOrders
 
 
 menu()
