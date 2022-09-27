@@ -12,6 +12,7 @@ def menu ()->None:
         print("8) DataFrames - Orders \n")
         print("9) Best Students \n")
         print("10) Dataframe fixer \n")
+        print("11) Exchange \n")
         print("0) Exit \n")
 
         option = int(input('Select an option please: '))
@@ -36,6 +37,7 @@ def menu ()->None:
             import bestStudents
         elif (option == 10):
             import dataFrameFixer
-
+        elif (option == 11):
+            import exchange
 
 menu()
