@@ -1,4 +1,4 @@
-def menu ()->None:
+def menu() -> None:
     option = ''
     while (option != 0):
         print("------ Select an Option ------\n")
@@ -13,6 +13,8 @@ def menu ()->None:
         print("9) Best Students \n")
         print("10) Dataframe fixer \n")
         print("11) Exchange \n")
+        print("12) Depure Soccer Game \n")
+        print("13) Agroups \n")
         print("0) Exit \n")
 
         option = int(input('Select an option please: '))
@@ -39,5 +41,10 @@ def menu ()->None:
             import dataFrameFixer
         elif (option == 11):
             import exchange
+        elif (option == 12):
+            import depureSoccerGame
+        elif (option == 13):
+            import agroups
+
 
 menu()
