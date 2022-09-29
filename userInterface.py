@@ -15,6 +15,7 @@ def menu() -> None:
         print("11) Exchange \n")
         print("12) Depure Soccer Game \n")
         print("13) Agroups \n")
+        print("14) Dataframe merge \n")
         print("0) Exit \n")
 
         option = int(input('Select an option please: '))
@@ -45,6 +46,8 @@ def menu() -> None:
             import depureSoccerGame
         elif (option == 13):
             import agroups
+        elif (option == 14):
+            import dataframeMerge
 
 
 menu()
