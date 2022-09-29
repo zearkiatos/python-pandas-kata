@@ -16,6 +16,7 @@ def menu() -> None:
         print("12) Depure Soccer Game \n")
         print("13) Agroups \n")
         print("14) Dataframe merge \n")
+        print("15) Calculate universities capacities \n")
         print("0) Exit \n")
 
         option = int(input('Select an option please: '))
@@ -48,6 +49,8 @@ def menu() -> None:
             import agroups
         elif (option == 14):
             import dataframeMerge
+        elif (option == 15):
+            import universityCapacity
 
 
 menu()
