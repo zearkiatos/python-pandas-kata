@@ -17,6 +17,8 @@ def menu() -> None:
         print("13) Agroups \n")
         print("14) Dataframe merge \n")
         print("15) Calculate universities capacities \n")
+        print("16) Histograms \n")
+        print("17) Bars \n")
         print("0) Exit \n")
 
         option = int(input('Select an option please: '))
@@ -51,6 +53,10 @@ def menu() -> None:
             import dataframeMerge
         elif (option == 15):
             import universityCapacity
+        elif (option == 16):
+            import historgram
+        elif (option == 17):
+            import bars
 
 
 menu()
