@@ -19,6 +19,8 @@ def menu() -> None:
         print("15) Calculate universities capacities \n")
         print("16) Histograms \n")
         print("17) Bars \n")
+        print("18) Boxplot \n")
+        print("19) Custom boxplot \n")
         print("0) Exit \n")
 
         option = int(input('Select an option please: '))
@@ -57,6 +59,10 @@ def menu() -> None:
             import historgram
         elif (option == 17):
             import bars
+        elif (option == 18):
+            import boxplots
+        elif (option == 19):
+            import customBoxplot
 
 
 menu()
