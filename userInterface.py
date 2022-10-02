@@ -22,6 +22,7 @@ def menu() -> None:
         print("18) Boxplot \n")
         print("19) Custom boxplot \n")
         print("20) Dispersion Graph \n")
+        print("21) Matrix dispersion \n")
         print("0) Exit \n")
 
         option = int(input('Select an option please: '))
@@ -66,6 +67,8 @@ def menu() -> None:
             import customBoxplot
         elif (option == 20):
             import dispersionGraph
+        elif (option == 21):
+            import dispersionMatrix
 
 
 menu()
